@@ -14,7 +14,7 @@ Informação privada, no contexto da MASVS, diz respeito não só às credenciai
 - Informação altamente sensível que pode pôr em causa a reputação do indivíduo, e/ou custos financeiros se comprometida: Informação contratual, Informação de não divulgação, informação de gestão;
 - Quaisquer dados que devem ser protegidos por lei ou outras razões.
 
-## Requisitos para Verificação de Segurança
+## Requisitos para verificação de Segurança
 
 A grande maioria dos problemas de exposição de dados pode ser evitada através da aplicação de regras simples. A maioria das controlos listados neste capítulo são obrigatórios para todos os níveis de verificação.
 

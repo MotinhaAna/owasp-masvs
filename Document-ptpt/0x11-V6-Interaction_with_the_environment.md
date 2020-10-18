@@ -2,18 +2,18 @@
 
 ## Objetivo de Controlo
 
-Os controlos neste grupo asseguram que a aplicação utiliza Interfaces de Programação da Aplicação (APIs) e componentes padrão. Adicionalmente é também abordada a comunicação entre aplicações (ICP).
+Os controlos neste grupo asseguram que a aplicação utiliza Interfaces de Programação da Aplicação (APIs) e componentes padrão de uma forma segura. Adicionalmente os controlos abordam a comunicação entre aplicações (ICP).
 
 ## Requisitos para Verificação de Segurança
 
 | # | MSTG-ID | Descrição | L1 | L2 |
 | -- | -------- | ---------------------- | - | - |
 | **6.1** | MSTG-PLATFORM-1 | A aplicação apenas requer o conjunto mínimo de permissões necessárias. | ✓ | ✓ |
-| **6.2** | MSTG-PLATFORM-2 | Quaisquer dados obtidos por fonte externa (utilizador e outros) são validados e, se necessário, sanitizados. Aqui estão incluídos quaisquer dados obtidos através de interface visual (UI), via comunicação inter-processos (IPC), incorporados nos localizadores de instâncias (URL), assim como por recursos de rede.| ✓ | ✓ |
-| **6.3** | MSTG-PLATFORM-3 | A aplicação não exporta qualquer informação sensível via esquemas de localizadores de instâncias (URL) customizados, excepto nos casos em que esses mecanismos estão devidamente protegidos. | ✓ | ✓ |
+| **6.2** | MSTG-PLATFORM-2 | Quaisquer dados obtidos por fonte externa e/ou pelo utilizador são validados e, se necessário, sanitizados. Isto inclui dados obtidos através de interface visual, via comunicação inter-processos (IPC), urls, e recursos de rede.| ✓ | ✓ |
+| **6.3** | MSTG-PLATFORM-3 | A aplicação não exporta funcionalidades sensíveis via urls customizados, excepto nos casos em que estes mecanismos estão devidamente protegidos. | ✓ | ✓ |
 | **6.4** | MSTG-PLATFORM-4 | A aplicação não exporta qualquer informação sensível via comunicação inter-processos (IPC), excepto nos casos em que esses mecanismos estão devidamente protegidos. | ✓ | ✓ |
-| **6.5** | MSTG-PLATFORM-5 | JavaScript está inactivo nas vistas da aplicação excepto nos casos em que é estritamente necessário. | ✓ | ✓ |
-| **6.6** | MSTG-PLATFORM-6 | As vistas da aplicação estão configuradas de forma a suportar o número mínimo de protocolos , idealmente só https deve ser suportado.  Potentially dangerous handlers, such as file, tel and app-id, are disabled. | ✓ | ✓ |
+| **6.5** | MSTG-PLATFORM-5 | JavaScript está inactivo nas webviews excepto nos casos em que é estritamente necessário. | ✓ | ✓ |
+| **6.6** | MSTG-PLATFORM-6 | As webviews estão configuradas para apenas permitir o número mínimo de protocolos necessários (idealmente só https deve ser suportado). Esquemas potencialmente perigosos como file, tel e app-id estão desativados. | ✓ | ✓ |
 | **6.7** | MSTG-PLATFORM-7 | Se métodos nativos da aplicação estarem expostos na vista web, verificar que esta apenas renderiza o JavaScript contido na aplicação. | ✓ | ✓ |
 | **6.8** | MSTG-PLATFORM-8 | A deserialização de objectos, se necessária, é implementada através do uso de interfaces (APIs) de serialização seguras. | ✓ | ✓ |
 | **6.9** | MSTG-PLATFORM-9 | A aplicação protege-se contra ataques de sobreposição de ecrãs. (Apenas em Android) |  | ✓ |
